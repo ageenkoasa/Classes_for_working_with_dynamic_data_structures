@@ -1,0 +1,6 @@
+﻿  List.cpp
+D:\C++\2 КУРС Вельченко Сергей Александрович\Лаб3\List\List\List.cpp(63,19): warning C4101: 'n': unreferenced local variable
+  Source.cpp
+D:\C++\2 КУРС Вельченко Сергей Александрович\Лаб3\List\List\Source.cpp(120,19): warning C4101: 'n': unreferenced local variable
+  Generating Code...
+  List.vcxproj -> D:\C++\2 КУРС Вельченко Сергей Александрович\Лаб3\List\Debug\List.exe
