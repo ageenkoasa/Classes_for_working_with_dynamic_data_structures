@@ -59,7 +59,7 @@ List::List(const char* fileName) {
 	}
 	catch (const int n)
 	{
-		cerr << "������! ���� �� ��������\n";
+		cerr << "Ошибка! Файл не открылся\n";
 	}
 }
 
@@ -106,10 +106,6 @@ Node* List::getLast() {
 	return current;
 }
 
-//1. ����� �������, � ������� ����� �������� ����.
-//2. ������� ����� ���� � �������� � ���� ������.
-//3. ��������� ����� ���� �� ��������� �������, ������� �������� ��������������� ����������.
-
 void List::insert(int index, int value) {
 	Node* newPtr = new Node();
 	newPtr->field = value;
@@ -130,7 +126,7 @@ List::List(int num) {
 	length = num;
 	if (num == 0)
 		return;
-	cout << "������� ����� ��� ������:\n";
+	cout << "Введите значения для списка:\n";
 	int n, i = 1;
 
 	head = new Node;
@@ -175,7 +171,7 @@ Node* List::next(Node* node) {
 
 void List::show() {
 	if (head == NULL) {
-		cout << "������ ����!\n";
+		cout << "Список пуст!\n";
 		return;
 	}
 	Node* current = head;
@@ -217,7 +213,7 @@ List List::operator=(const List& list2) {
 std::ofstream& operator<<(std::ofstream& f, List& obj)
 {
 	if (obj.getFirst() == NULL) {
-		f << "������ ����!\n";
+		f << "Список пуст!\n";
 		return f;
 	}
 	Node* current = obj.getFirst();
